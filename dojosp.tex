@@ -1,20 +1,9 @@
-
-%
-%  $Description: Author guidelines and sample document in LaTeX 2.09$ 
-%
-%  $Author: ienne $
-%  $Date: 1995/09/15 15:20:59 $
-%  $Revision: 1.4 $
-%
-
 \documentclass[times, 10pt,twocolumn]{article} 
 \usepackage{latex8}
 \usepackage[utf8]{inputenc}
 \usepackage{verbatim}
 \usepackage{times}
 \usepackage{url}
-
-%\documentstyle[times,art10,twocolumn,latex8]{article}
 
 %------------------------------------------------------------------------- 
 % take the % away on next line to produce the final camera-ready version 
@@ -26,7 +15,7 @@
 \title{Coding Dojo: an environment for learning and sharing Agile practices}
 
 \author{Danilo Sato\\
-\textit{ThoughtWorks}\\ 
+\textit{ThoughtWorks Limited}\\ 
 {\tt danilo.sato@thoughtworks.com}\\
 \and
 Hugo Corbucci, Mariana Bravo\\
@@ -42,38 +31,13 @@ Hugo Corbucci, Mariana Bravo\\
    Resumo... 
 \end{abstract}
 
-
-
-%------------------------------------------------------------------------- 
-\section{Introduction}\label{sec:introduction}
-
-A Coding Dojo is a weekly meeting where a group of programmers gets together to learn, practice, and share experiences. The session is organized around a programming challenge (Code Kata) where people are encouraged to participate and share their coding skills with the audience while solving the problem. In an inclusive and collaborative environment, the participants discuss and practice a wide range of topics, such as: TDD/BDD, Agile, refactoring, pair programming, OO, design, Algorithms, different programming languages, paradigms, and frameworks.
-
-In this session, the presenters will share their experiences of creating and running a Coding Dojo in São Paulo, Brazil. They will present their tailored process to conduct the sessions, improved over time by retrospectives. They will also discuss the aspects of a Coding Dojo that foster learning and tacit knowledge sharing, presenting the lessons learned from the weekly meetings being held since the first session in July, 2007.
-
-%------------------------------------------------------------------------- 
-\section{Coding Dojo}\label{sec:dojo}
-
-O que é?\cite{DojoWiki} Por quê? Origem\cite{DaveThomas}
-
-\subsection{Coding Dojo@SP: Numbers and Processes}\label{subsec:dojosp}
-
-session agenda, \# of participants, \# of meetings, Languages utilized, ...
-
-\section{Lessons Learned}\label{sec:lessons_learned}
-
-\subsubsection{What Went Well?}\label{ssub:well}
-
-\subsubsection{What Went Less Well?}\label{ssub:less_well}
-
-\subsubsection{What Puzzles Us?}\label{ssub:puzzles}
-
-\section{Dojo and Learning}\label{sec:dojo_and_learning}
-
-\section{Conclusion}\label{sec:conclusion}
+\input{01-intro}
+\input{02-dojo}
+\input{03-lessons}
+\input{04-learning}
+\input{05-conclusion}
 
 \bibliographystyle{latex8}
 \bibliography{dojosp}
 
 \end{document}
-
