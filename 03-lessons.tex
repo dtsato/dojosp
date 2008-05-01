@@ -8,12 +8,12 @@ Section~\ref{ssub:puzzles} the experience of running the sessions in different
 contexts and to different audiences raised some issues that are still puzzles
 to understand.
 
-\subsection{What went well?}\label{ssub:well}
+\subsection{What Went Well?}\label{ssub:well}
 
-\subsubsection{Retrospectives and action items}
+\subsubsection{Retrospectives and Action Items}
 
 As described in the previous section, every meeting ends with a
-short retrospective. The participants receive red and yellow sticky
+short retrospective~\cite{Retro}. The participants receive red and yellow sticky
 notes and write positive and negative aspects of the session. In the
 beginning, the group followed the usual retrospective format,
 asking ``What went well?'' and ``What could be improved?''.
@@ -40,11 +40,11 @@ think about the following questions:
 \item \textbf{``What has hindered learning?''}: The negative aspects
   of a meeting are discussed, and the main impediments are
   identified. For these impediments, the group discusses how they could be
-  eliminates and come up with a series of action items. People are assigned
+  eliminated and come up with a series of action items. People are assigned
   to handle each action item and the results are recorded for future reflection.
 \end{itemize}
 
-\subsubsection{The goal is not to finish}
+\subsubsection{The Goal is not to Finish}
 
 When the São Paulo \emph{Codingo Dojo} started, the participants
 agreed that one of the goals was to learn different algorithms and
@@ -90,7 +90,7 @@ between the group, the current pair has less coding time. The
 participants have not yet found a solution to this, but some ideas
 have been suggested and should be attempted at future meetings.
 
-\subsubsection{Information radiators}
+\subsubsection{Information Radiators}
 
 Since the \emph{Coding Dojo} uses TDD, the coding session follows a
 clear ``red - green - refactor'' cycle. However, between discussions or
@@ -112,106 +112,104 @@ adapted a script to report the autotest results in the OS notifications
 system, with a little pop up on the top right corner of the screen. When
 the pop up is red, it stays on the screen until it is clicked.
 
-\subsubsection{Inspiration for the meeting}
+\subsubsection{Inspiration for the Meeting}
 
-One interesting tool that was also appreciated by the participants was
+One interesting tool that was appreciated by the participants was
 to have an ``Inspiration Moment'' prior to the discussions. The moderator
-used to choose a card from the Creative Whack Pack~\cite{Creative}
-containing a different creativity strategy that inspired the thought
-process and gave insights into how to approach the problem.
+chooses a card from the Creative Whack Pack~\cite{Creative}. Each
+card contained a different creativity strategy that inspired the thought
+process and gave insights into how to approach the problem at hand.
 
-\subsection{What went less well?}\label{ssub:less_well}
+\subsection{What Went Less Well?}\label{ssub:less_well}
 
-\subsubsection{Moderating Brazilians (hard not to speak on red)}
+\subsubsection{Moderating Brazilians}
 
-One of the rules imported from international Dojos is that, during a
-Randori, the audience should not speak when the tests are red. Red
-time is when the current pair is supposed to practice and make the
-tests pass, and only if they ask for help should the other
-participants give suggestions.
+As described in Section~\ref{sec:dojo}, one of the rules of a
+\emph{Randori} session is that the audience should not speak when
+the tests are not passing. A red bar is the time when the current
+pair is supposed to practice and get to a green bar. Unless the pair
+asks for help, the other participants should not give suggestions.
 
-However, from the beginning this has been a hard practice to follow at
-the Sao Paulo Coding Dojo.
+However, from the beginning this has been a hard rule to follow at
+the São Paulo \emph{Coding Dojo}. One of the problems the participants
+have faced from the beginning is that people talk at bad moments. The authors
+believe this is related to cultural aspects of the group. Brazilian people are
+very communicative and even if they do not talk to the current programming
+pair, they like to chat to other peers, disturbing the focus of the session.
+We tried to fight that and it got a bit better with time but it is no
+longer a rule. It became more likely a good practice that the moderator should
+remind the participants when things start getting out of control.
 
-One of the problems the Dojo participants have faced from the
-beginning is that people talk at bad moments. The authors believe this
-is related to cultural aspects of the group. Brazilian people are very
-communicative and even if they do not talk to the current programming
-pair, the other small chats are enough to disturb the order. We tried
-to fight that and it got a bit better with time but it is no longer a
-rule. More likely a good practice that attendees try to follow and
-self control themselves when getting out of hand.
-
-\subsubsection{TDD/BDD and algorithms}
+\subsubsection{TDD/BDD and Algorithms}
 
 A few sessions took programming problems from sources in which
 traditional algorithms such as Dijkstra's shortest path between two
-nodes on a graph are ment to be implemented to solve the
-problem. Those experiences points out to be very disapointing in the
-meaning that, even if all attendees understood the solution, they
-never got to the solution in the given time. Moreover, the tests or
-behaviours that were written would hardly direct the group to the
-desired solution and when they did, refactoring the existing code to
-the desired solution would be a huge work.
+nodes on a graph are the appropriate solution to the problem. At times,
+these sessions turned out to be a little disappointing: even if all attendees
+understood the solution, they never got to the full implementation in the given
+time. Moreover, the participants found that implementing the simplest solution
+to make the current test pass, and drive the algorithm through examples of the
+expected outcome usually required a huge breakthrough refactoring step that could
+maybe not be found if nobody had the previous knowledge of how the
+algorithm works. This step usually took several turns to be understood and implemented,
+giving a feeling that they were not making progress. It broke the \textbf{Baby Steps}
+principle, made it harder to change pairs and lost the focus of the tests.
+The reason might be that complex algorithms usually require a broader knowledge
+experience and, unless the programmers have the steps to drive the proper implementation
+in their heads, they will hardly get to a solution by simply following TDD with examples
+of input and output pairs.
 
-Not only was it frustating not to reach the correct implementation but
-it was even worse when refactoring for a long period of time without
-tests running. It broke the \textbf{Baby Steps} principle, made it
-harder to change pairs and lost the focus of the tests. The reason
-might be that traditional algorithms hardly work partially and can be
-improved upon.
+\subsubsection{Balancing Randoris and Prepared Katas}
 
-\subsubsection{Balancing randoris and prepared katas}
-
-\textsl{Randori} sessions are very important because they provide
-learning and pratice to all participants. \textsl{Prepared Katas} are
+\emph{Randori} sessions are very important because they provide
+learning and practice to all participants. \emph{Prepared Katas} are
 also interesting since it is usually possible for the group to advance
-further in seeing the implementation of a problem. However, it takes
-someone's time outside of \textsl{Coding Dojo} sessions for a
-\textsl{prepared Kata} to be developed and practiced. Because of that,
-this kind of session is much more rare than \textsl{Randori} sessions.
+further in the implementation of a solution. However, it takes
+someone's time outside of the \emph{Coding Dojo} sessions for a
+\emph{Prepared Kata} to be developed and practiced. Because of that,
+this kind of session is much less usual than \emph{Randori} sessions.
 Although sometimes the group feels the need or opportunity for a
-\textsl{prepared Kata} session, it is not easy to find a participant
+\emph{Prepared Kata} session, it is not always easy to find a participant
 with availability to prepare it.
 
-\subsubsection{Programming environment}
+\subsubsection{Programming Environment}
 
 Open source communities know the issue very well: Emacs or VI?
 
-Each programmer has her prefered tools, environments, key sets and
-shortcuts. With the laptop era, the problem applies also to hardware:
+Each programmer has his preferred tools, environments, key sets, and
+shortcuts. With laptops, the problem is also extended to hardware:
 each laptop according to its origin or manufacturer has a slightly
 different keyboard. Gathering several programmers that work on
-different operating systems, software and languages causes a lot
+different operating systems, software, and languages causes a lot
 issues. Having Apple laptops running Mac OS X with Command keys
 instead of Control brought several complains from attendees. Attempts
-to change the environment brought the same issues with other people.
+to change the environment brought the same issues to other people.
 
 Finding an environment less hostile to attendees is still a problem
-for a meeting that hopes to bring all sorts of people. So far the
+for a meeting that hopes to engage all sorts of people. So far the
 issue has been addressed by trying to stick to the same environment so
 that people get used to it.
 
-\subsection{What is still puzzling?}\label{ssub:puzzles}
+\subsection{What is Still Puzzling?}\label{ssub:puzzles}
 
-After over 50 \textit{Coding Dojo} sessions, lots of issues were found
-and solved. However, some of them still puzzle the authors. Those
-questions are an invitation to discussions and attempts.
+After over 50 \emph{Coding Dojo} sessions, lots of issues were found
+and resolved. However, some of them still puzzle the authors, raising
+questions that are an invitation for further discussions.
 
-\subsubsection{How to reach a wider audience?}
+\subsubsection{How to Reach a Wider Audience?}
 
-As discussed in Section \ref{sec:learning}, the coding sessions
-are very effective spreading knowledge among attendees. Knowledge in a
-\textit{Coding Dojo} session is similar to value in open source
-software: it grows as more people add their own knowledge in. It is
-therefore natural to have a will to bring more and more people to
-those session. But, even in free software, people do not throw in
-their knowledge if there are no compensation to it
+As discussed in Section~\ref{sec:learning}, the coding sessions
+are very effective to spread knowledge among attendees. Knowledge in a
+\emph{Coding Dojo} session is similar to value in open source
+software: it grows at the same pace as more people add their own time
+and knowledge in. It is therefore natural to have a will to bring more
+and more people to the session. But, even in free software, people do not
+throw in their knowledge if there are no compensations for doing it
 (\cite{RishabGhosh}) so the session must bring knowledge to every
 attendee.
 
 The authors found out that gathering more than a certain amount of
-individuals (for example 20) in a \textit{Coding Dojo} rises serious
+individuals (for example 20) in a \emph{Coding Dojo} rises serious
 problems. The gap of knowledge tends to be greater which can lead to
 intimidation of certain attendees and lack of interest from others. It
 also gives the impression of having a slower dynamic since it is
@@ -219,36 +217,36 @@ always someone else coding than the attendee himself. Lastly, it
 increases the temptation to talk to others attendees in the
 audience. The result is that people do not agree on an implementation
 and keep erasing what the previous pair did. Knowledge is then never
-shared and the session looses its meaning.
+shared, progress is not made, and the session looses its meaning.
 
-Is it possible to fight those problem? Can one session hold many
+Is it possible to fight these problems? Can one session hold many
 people and still spread enough knowledge to each attendee to have them
 benefit from the meeting? If not, should the meeting be split? How
 to balance attendees to have them benefit from it?
 
-\subsubsection{How to share efforts with the community?}
+\subsubsection{How to Share Efforts with the Community?}
 
 Following the same motivation previously presented, if it is possible
-to share results between \textit{Coding Dojos}, it would bring even
-more value to those communities. Results can mean code, software or
+to share results between \emph{Coding Dojos}, it would bring even
+more value to those communities. Results can be code, software, or
 even practices and sharing them should allow other communities to go a
-step further. Again, it relates very closely to the whole open source
-idea but differs on the media that should disseminate knowledge. While
+step further. Again, it relates very closely to the open source
+idea but differs on the media where knowledge is disseminated. While
 free software communities have code being the final way to transmit
-knowledge, the code generated on a \textit{Coding Dojo} session rarely
-transmits a decent portion of what was learned to achieve that result.
+knowledge, the code generated on a \emph{Coding Dojo} session rarely
+transmits the lessons the participants experienced during the meeting
+to achieve that result.
 
-What could help transmit that experience? What software are lacking to
-improve a \textit{Coding Dojo} session? Could code between very
-different communities be reused? Are two \textit{Coding Dojo} groups
-similar enough to have share the same issues?
+What could help transmit that experience? What tools are lacking to
+improve a \emph{Coding Dojo} session? Are different \emph{Coding Dojo}
+groups similar enough to share the same issues?
 
-\subsubsection{How to keep attendees engaged?}
+\subsubsection{How to Keep Attendees Engaged?}
 
 Since the \textit{Coding Dojo} sessions should evolve with time as
-attendees get more used to TDD and the language or environment used,
-it is interesting to keep a participant base that could ensure the
+attendees get more used to TDD, the language, and the environment used,
+it is interesting to keep a subset of participants that can ensure the
 normal flow of the session. What makes attendees come back to another
-session? How to ensure that those characteristics are always present?
-How handle this goal with the need for new attendees to bring new
-ideas?
+session? How to ensure that these characteristics are always present?
+How to balance this goal with the desire to have new attendees bringing
+new ideas?
