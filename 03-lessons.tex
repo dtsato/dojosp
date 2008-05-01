@@ -13,84 +13,100 @@ different contexts, the authors discovered some unaddressed issues
 
 \subsection{What went well?}\label{ssub:well}
 
-\subsubsection{The goal is not to finish}
-
-When the Dojo started, the participants agreed that one of the goals
-was to learn different algorithms and approaches to problem solving.
-
-On the second meeting, we attempted to solve a problem, and the
-time-boxed rounds became a race of who could produce more code and get
-closer to solving the problem. The coding happened really fast, and
-soon some participants could not keep up with what changes were made
-and why. In the aftermath of this meeting, the group decided that
-finishing the problem should never be a goal of the meeting. More than
-that, it was agreed that not writing the entire solution was OK, as
-long as we could learn something from the coding session. ``It's OK
-not to finish'' has been one of our principles ever since, and we
-repeat it whenever someone forgets or doesn't know.
-
-With that principle clear, the Dojo participants take their time
-writing code and understanding it, and the group often does not finish
-coding all aspects of the problems proposed.
-
 \subsubsection{Retrospectives and action items}
 
-The retrospective at the end of each meeting allows Dojo participants
-to evolve and the Dojo itself to improve.
+As described in the previous section, every meeting is ended with a
+short retrospective. The participants receive red and yellow sticky
+cards and write positive and negative aspects of the session that just
+ended. In the begining, the group followed a simple retrospective
+format, asking ``What worked well?'' for positive aspects and ``What
+can be improved?'' for negative aspects. These questions led people to
+write items about the process used for the meetings, such as when to
+choose the problem, when to change the programming language, what
+laptop to use, etc. This kind of feedback helped improve the Sao Paulo
+\emph{Coding Dojo} itself, and to reach the process described in
+\ref{subsec:dojosp}.
 
-As described in the previous section, every Coding Dojo meeting is
-ended with a short retrospective. The participants receive red and
-yellow sticky cards and write positive and negative aspects of the
-meeting that just ended. In the beginning we followed the standard
-retrospective format, asking ``What do we want to keep?''  for
-positive aspects and ``What can we improve?'' for negative
-aspects. After some time, we found that the items written by people
-focused on environmental aspects of the Dojo such as the room, the
-people present, etc. In hopes of motivating more reflexion and
-introspection, a different pair of questions was suggested: ``What
-have we learned?'' for positive aspects and ``What has hindered
-learning?'' for negative aspects.
+After some time, the retrospective format changed to reflect the
+objetives of the \emph{Coding Dojo}. Now participantes are asked to
+think about the following questions:
 
-The positive aspects question motivates people to think about what
-they have actually learned during this session. Since the primary goal
-of the Dojo is learning and practicing, this is an effective way to...
+\begin{itemize}
+\item \textbf{``What have we learned?''}: Reflecting and discussing
+  what was learned is an effective way to make learning an active
+  process and to verify that the session met its goals.
+\item \textbf{``What has hindered learning?''}: The negative aspects
+  of a meeting are discussed, and the main impediments are
+  identified. For these impediments, the group thinks of what could be
+  done to eliminate them, and the action items are recorded for future
+  meetings.
+\end{itemize}
 
-{\bf** Basicamente, quero falar que o ``pensar sobre o que aprendemos''
-ajuda a gente a aprender de fato. Se nao pensarmos, aprendemos menos.}
+\subsubsection{The goal is not to finish}
 
-The negative aspects are also discussed from a practical point of
-view. After reviewing and identifying the main negative aspects, the
-group discussed possible solutions or actions to prevent the ``bad
-things'' from happening again.
+When the Sao Paulo \emph{Codingo Dojo} started, the participants
+agreed that one of the goals was to learn different algorithms and
+approaches to problem solving. On the second meeting, during the
+\textsl{Randori} coding session, the time-boxed rounds became a race
+of who could produce more code and get closer to solving the
+problem. The coding happened really fast and soon some participants
+could not keep up with what changes were made and why.
+
+At the following retrospective, the group decided that finishing the
+problem should never be a goal of the meeting. More than that, it was
+agreed that not writing the entire solution was OK, as long as the
+participants could learn something from the coding session. ``It's OK
+not to finish'' has been one of the Sao Paulo \emph{Coding Dojo}'s
+principles ever since, and it is repeated whenever someone forgets or
+doesn't know.
+
+With that principle clear, the participants take their time writing
+code and undestanding it, and the group often does not finish
+implementing entire solutions to the problems.
 
 \subsubsection{Time-boxing}
 
-The Sao Paulo Coding Dojo has always used 7 minutes time-boxes for
-Randori sessions. Since the beginning, the participants have felt
-that 5 minutes was too short to be good. However, for a long time the
-group also disrespected a bit the time-boxes. That is, if a pair was
-in the middle of writing a piece of test or a refactoring, and the
-group considered this activity to be short, the pair was allowed to
-finish the current code before switching. At first this took 1 or 2
-minutes more, but this ``overtime'' gradually increased until there
-was no more time box, but a minimum time for pairing.
+The Sao Paulo \emph{Coding Dojo} has always used 7 minutes time-boxes
+for \textsl{Randori} sessions. However, for a long time the group
+disrespected a bit the time-boxes. That is, if a pair was in the
+middle of writing a piece of test or a refactoring, and the group
+considered this activity to be short, the pair was allowed to finish
+the current code before switching. At first this took 1 or 2 minutes
+more, but this overtime gradually increased until there was no more a
+time-box, but a minimum time for each pair.
 
-This actually made it difficult for everyone to be focused on the
+This actually made it difficult for everyone to be focused on the big
 screen - the longer a pair stayed at the front, less and less people
 payed attention to them. As a result, the group decided to adopt
-\textbf{really strict} time-boxes. When the timer rings, no matter
+\textsl{really strict} time-boxes. When the timer rings, no matter
 what else, the pair is switched. This has made meetings more dynamic
-and easy to follow, although some focus problems remain, as will be
-discussed in the next subsection \ref{ssub:less_well}.
+and easy to follow.
 
-[One side-effect of this approach is that if some discussion happens
+One side-effect of this approach is that if some discussion happens
 between the group, the current pair has less coding time. The
 participants have not yet found a solution to this, but some ideas
-have been suggested and should be attempted at future meetings.]
+have been suggested and should be attempted at future meetings.
 
 \subsubsection{Information radiators}
 
-\subsubsection{Communication}
+Since the \emph{Coding Dojo} uses TDD, the coding session follows a
+clear cycle: red - green - refactor. However, between discussions or
+distractions, the group sometimes forgets what is the current
+stage. The participants felt the need of visual feedback of the
+current stage - such as an information radiator. Therefore, some means
+of displaying information have been used and tested.
+
+The first was a red/green window developed individually by one of the
+participants. The program would collect test results pushed to a
+temporary file and display a color approprietly. Although a bit buggy,
+it proved an important tool for displaying information about the TDD
+cycle. When the programming language used in the sessions switched to
+Ruby, the group started using autotest, which is a program that
+watches for changes in the program files and automatically runs
+related tests. Then, another participant adapted a script to have the
+autotest results be reported in the OS notifications system, with a
+little pop up on the top right corner of the screen. When the pop up
+is red, it stays on the screen until it is clicked. 
 
 \subsubsection{Inspiration for the meeting}
 
