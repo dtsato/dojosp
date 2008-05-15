@@ -1,12 +1,15 @@
 \section{Lessons Learned}\label{sec:lessons_learned}
 
-After over 6 months of weekly meetings, the retrospectives allowed
-the process to be improved. Section~\ref{ssub:well} will discuss the
-aspects of the \emph{Coding Dojo} that went well. Section~\ref{ssub:less_well}
-will discuss the things that worked less well than expected. Finally, in
-Section~\ref{ssub:puzzles} the experience of running the sessions in different
-contexts and to different audiences raised some issues that are still puzzles
-to understand.
+After over 6 months of weekly meetings, the retrospectives allowed the
+process to be improved. Section~\ref{ssub:well} will discuss the
+aspects of the \emph{Coding Dojo} that went
+well. Section~\ref{ssub:less_well} will discuss the things that worked
+less well than expected. Finally, in Section~\ref{ssub:puzzles} the
+experience of running the sessions in different contexts and to
+different audiences raised some issues that that are an invitation for
+further discussions.
+% are still puzzles
+%to understand.
 
 \subsection{What Went Well?}\label{ssub:well}
 
@@ -90,12 +93,12 @@ meetings to be more dynamic and easier to follow.
 
 One side-effect of this approach is that if some discussion happens
 between the group, the current pair has less coding time. The
-participants have not yet found a solution to this, but suggested
-the option of having a pause requested by anyone in the audience for
-a time-boxed discussion. During that time, the coding pair should
-conduct the discussion. Another alternative would be to include these
-time-boxed discussions between each pair change, with the possibility
-of skipping it if the group feel it is not needed.
+participants have not yet found a solution to this, but suggested the
+option of having a pause requested by anyone in the audience for a
+time-boxed discussion. During that time, the coding pair should
+conduct the discussion and their coding-timer is paused. Another
+alternative would be to include these time-boxed discussions between
+each pair change, skipping it if the group feels it is not needed.
 
 \subsubsection{Information Radiators}
 
@@ -109,15 +112,16 @@ some means of displaying information have been used and tested.
 The first was a red/green window developed individually by one of the
 participants. The Perl script would collect test results pushed to a
 temporary file and display a color appropriately. It proved to be an
-important tool for displaying information about the TDD cycle and
-to help the moderator during the coding session. When the programming
+important tool for displaying information about the TDD cycle and to
+help the moderator during the coding session. When the programming
 language was switched to Ruby, the group started using
 autotest\footnote{\url{http://www.zenspider.com/ZSS/Products/ZenTest}},
 which is a program that watches for changes in the program files and
-automatically executes the appropriate tests. Then, another participant
-adapted a script to report the autotest results in the OS notifications
-system, with a little pop up on the top right corner of the screen. When
-the pop up is red, it stays on the screen until it is clicked.
+automatically executes the appropriate tests. Then, another
+participant adapted a script to report the autotest results in the OS
+notifications system, with a little pop up on the top right corner of
+the screen. When the pop up is red, it stays on the screen until it is
+clicked.
 
 \subsubsection{Inspiration for the Meeting}
 
@@ -148,7 +152,7 @@ the São Paulo \emph{Coding Dojo}. One of the problems the participants
 have faced from the beginning is that people talk at bad moments. The authors
 believe this is related to cultural aspects of the group. Brazilian people are
 very communicative and even if they do not talk to the current programming
-pair, they like to chat to other peers, disturbing the focus of the session.
+pair, they like to chat with other peers, disturbing the focus of the session.
 The moderators tried to fight that and it got a bit better with time but it is no
 longer a rule. It became more like a good practice that the moderator should
 remind the participants when things start getting out of control.
@@ -157,20 +161,24 @@ remind the participants when things start getting out of control.
 
 A few sessions took programming problems from sources in which
 traditional algorithms such as Dijkstra's shortest path between two
-nodes on a graph are the appropriate solution. At times,
-these sessions turned out to be a little disappointing: even if all attendees
-understood the solution, they never got to the full implementation in the given
-time. Moreover, the participants found that implementing the simplest solution
-to make the current test pass, and drive the algorithm through examples of the
-expected outcome usually required a huge breakthrough refactoring step that could
-maybe not be found if nobody had the previous knowledge of how the
-algorithm works. This step usually took several turns to be understood and implemented,
-giving a feeling that they were not making progress. It broke the \textbf{Baby Steps}
-principle, made it harder to change pairs and lost the focus of the tests.
-The reason might be that complex algorithms usually require a broader knowledge
-experience and, unless the programmers have the steps to drive the proper implementation
-in their heads, they will hardly get to a solution by simply following TDD with examples
-of input and output pairs.
+nodes on a graph are the appropriate solution. At times, these
+sessions turned out to be a little disappointing: even if all
+attendees understood the solution, they never got to the full
+implementation in the given time. Moreover, the participants found
+that implementing the simplest solution to make the current test pass,
+and drive the algorithm through examples of the expected outcome
+usually required a huge breakthrough refactoring step that maybe could
+not be found if nobody had the previous knowledge of how the algorithm
+works. This step usually took several turns to be understood and
+implemented, during which the tests remained red. It broke the
+\textbf{Baby Steps} principle and gave a feeling that the group was not making
+progress.
+
+The reason might be that complex algorithms usually require a broader
+knowledge experience and, unless the programmers have the steps to
+drive the proper implementation in their heads, they will hardly get
+to a solution by simply following TDD with examples of input and
+output pairs.
 
 \subsubsection{Balancing Randoris and Prepared Katas}
 
@@ -204,9 +212,9 @@ that people get used to it.
 
 \subsection{What is Still Puzzling?}\label{ssub:puzzles}
 
-After over 50 \emph{Coding Dojo} sessions, lots of issues were found
-and resolved. However, some of them still puzzle the authors, raising
-questions that are an invitation for further discussions.
+%After over 50 \emph{Coding Dojo} sessions, lots of issues were found
+%and resolved. However, some of them still puzzle the authors, raising
+%questions that are an invitation for further discussions.
 
 \subsubsection{How to Reach a Wider Audience?}
 
